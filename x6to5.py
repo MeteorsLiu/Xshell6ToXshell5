@@ -5,9 +5,9 @@ import codecs
 import io
 from os import listdir
 from os.path import isfile, join
-xshellpath = r"C:\Users\HaoLan\Desktop\xsh"
+xshellpath = r"path\to\xshellsession"
 onlyfiles = [os.path.join(xshellpath, f) for f in listdir(xshellpath) if isfile(join(xshellpath, f)) and ".xsh" in f]
-outputdir = r"C:\Users\HaoLan\Desktop\xsh\out"
+outputdir = r"path\to\output"
 for of in onlyfiles:
         with open(of, 'rb') as f:
             encoded_text = f.read()
